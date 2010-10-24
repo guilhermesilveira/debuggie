@@ -1,6 +1,29 @@
 = debuggie
 
-Description goes here.
+Debuggie is a one liner that helps you debugging instead of tapping and then debugging.
+
+= Installing
+
+Gem install it or configure it in your *test* enviroment:
+
+		gem install debuggie
+		
+If you are using ruby 1.8.x:
+
+		gem install ruby-debug
+
+Or ruby 1.9.x:
+
+		gem install ruby-debug19
+
+		
+= Using it
+
+Invoke debug in your dsl chain call:
+
+		My.dsl.chain.call.debug.something_else
+		
+And the debugger shall start inside the debug method. Simply *next* the debugger and you are ready to go.
 
 == Note on Patches/Pull Requests
  
