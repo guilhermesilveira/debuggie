@@ -38,3 +38,4 @@ And the debugger shall start inside the debug method. Simply *next* the debugger
 == Copyright
 
 Copyright (c) 2010 guilherme silveira. See LICENSE for details.
+
