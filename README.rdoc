@@ -8,15 +8,11 @@ Gem install it or configure it in your *test* enviroment:
 
 		gem install debuggie
 		
-If you are using ruby 1.8.x:
+Bundle install the dependency (ruby-debug or ruby-debug19):
 
-		gem install ruby-debug
+	gem install bundler
+	bundle install
 
-Or ruby 1.9.x:
-
-		gem install ruby-debug19
-
-		
 = Using it
 
 Invoke debug in your dsl chain call:
