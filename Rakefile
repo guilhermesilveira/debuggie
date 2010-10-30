@@ -10,7 +10,7 @@ begin
     gem.email = "guilherme.silveira@caelum.com.br"
     gem.homepage = "http://github.com/guilhermesilveira/debuggie"
     gem.authors = ["guilherme silveira"]
-    gem.version = "0.9.0"
+    gem.version = "1.0.0"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
