@@ -19,7 +19,17 @@ rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
 
-task :default => :rdoc
+require 'rspec'
+require 'rspec/core'
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec) do |t|
+  # t.spec_files = FileList['spec_*.rb']
+  t.rspec_opts = ['--colour', '--format progress']
+end
+
+task :spec => :check_dependencies
+
+task :default => :spec
 
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
